@@ -1,6 +1,6 @@
-package HWPackagePublicTst;
+package HomeWork.hwPackagePublicTst;
 
-import HWClassesAndLoops.Word;
+import HomeWork.hwClassesAndLoops.Word;
 
 public class Main {
     public static void main(String[] args) {

@@ -4,7 +4,9 @@ public class InsurancePlan {
 
     private double coverage;
 
-    InsurancePlan(double coverage) {
+    public InsurancePlan() {}
+
+    public InsurancePlan(double coverage) {
         this.coverage = coverage;
     }
 

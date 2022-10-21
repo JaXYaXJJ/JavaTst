@@ -1,4 +1,4 @@
-package HWClassesAndLoops;
+package HomeWork.hwClassesAndLoops;
 
 public class Tester {
     public static void main(String[] args) {

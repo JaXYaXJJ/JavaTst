@@ -13,12 +13,12 @@ public class Patient extends User {
         this.isInsured = isInsured;
     }
 
-    public InsurancePlan getInsurancePlan() {
-        return insurancePlan;
-    }
-
     public void setInsurancePlan(InsurancePlan insurancePlan) {
         this.insurancePlan = insurancePlan;
+    }
+
+    public InsurancePlan getInsurancePlan() {
+        return insurancePlan;
     }
 }
 

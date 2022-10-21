@@ -1,4 +1,4 @@
-package HWClassesAndLoops;
+package HomeWork.hwClassesAndLoops;
 
 public class Funcs {
 
