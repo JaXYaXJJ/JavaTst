@@ -17,6 +17,8 @@ public class Line extends Geom {
     }
 
     public void showCoords() {
-        System.out.println("Line coords: \nPoint A " + x1 + " " + y1 + "\nPoint B " + x2 + " " + y2);
+        System.out.println("Line coords: " +
+                "\nPoint A " + x1 + " " + y1 +
+                "\nPoint B " + x2 + " " + y2);
     }
 }
