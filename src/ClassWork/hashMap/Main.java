@@ -7,9 +7,9 @@ import java.util.Set;
 public class Main{
     public static void main(String[] args) {
 
-        Sum s = new Sum();
-        int[] indexes = s.findSum(new int[] {2,7,11,15}, 9);
-        System.out.println(indexes[0] + " " + indexes[1]);
+//        Sum s = new Sum();
+//        int[] indexes = s.findSum(new int[] {2,7,11,15}, 9);
+//        System.out.println(indexes[0] + " " + indexes[1]);
 
         Map<String, Integer> students = new HashMap<>();
 
