@@ -19,32 +19,38 @@ public class TicketReservation {
 
     public boolean bookFlight(Passenger passenger) {
 
-        String passengerName = passenger.getName();
-        if (confirmedList.contains(passengerName)
-                || waitingList.contains(passengerName)) {
+        String passengerFullName = passenger.getName() + " " + passenger.getLastName();
+        if (confirmedList.contains(passengerFullName)
+                || waitingList.contains(passengerFullName)) {
             System.out.println("FALSE");
 
         } else if (confirmedList.size() <= MAX_SIZE_OF_LIST) {
-            confirmedList.add(passengerName);
+            confirmedList.add(passengerFullName);
             System.out.println(confirmedList);
             System.out.println(waitingList);
 
         } else if (waitingList.size() <= MAX_SIZE_OF_QUEUE) {
-            waitingList.add(passengerName);
+            waitingList.add(passengerFullName);
             System.out.println(confirmedList);
             System.out.println(waitingList);
         } else {
-            System.out.println("Sorry " + passengerName + ", but reservation list is full");
+            System.out.println("Sorry " + passengerFullName + ", but reservation list and waiting list is full.");
             return false;
         }
         return true;
     }
 
     public boolean cancel(String confirmationNumber) {
+
+
+
         return false;
     }
 
     public boolean removePassenger(Iterator<Passenger> iterator, String confirmationNumber) {
+
+
+
         return false;
     }
 }

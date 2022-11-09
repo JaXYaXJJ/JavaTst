@@ -20,8 +20,8 @@ public class Main {
                 integerList.remove(element);
         }
 
-        System.out.println(integerList);
+//        System.out.println(integerList);
 
-        integerList.forEach(System.out::println);
+//        integerList.forEach(System.out::println);
     }
 }
