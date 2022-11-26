@@ -66,7 +66,6 @@ public class Main {
             //Returns Nano Seconds, popular unit for timing IO operations
             startTime = System.nanoTime();
 
-
             //Read method return int
             //1 Byte = 8 bits = 256 values
             int byteReader;
