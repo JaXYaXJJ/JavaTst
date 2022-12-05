@@ -10,17 +10,16 @@ public class TicketBooking implements Runnable {
 
     private void buyTicket(int available) {
 
-//        synchronized(this) {
-        if (ticketsAvailable >= available) {
+        synchronized(this) {
+        if (ticketsAvailable == available) {
             System.out.println(Thread.currentThread().getName()
-                    + " going to buy a ticket.");
-            synchronized(this) {
+                    + " going to buy a ticket." + " [Ava. Tkt: " + ticketsAvailable + "]");
                 ticketsAvailable -= available;
                 System.out.println(Thread.currentThread().getName()
-                        + " bought a ticket...!");
+                        + " bought a ticket...!" + " [Ava. Tkt: " + ticketsAvailable + "]");
+
             }
         }
-//    }
     }
 
     @Override
@@ -31,7 +30,7 @@ public class TicketBooking implements Runnable {
             System.out.println("No tickets more...!");
     }
 
-    //Main
+    //JavaTst.tst.Main
     public static void main(String[] args) {
 
         TicketBooking ticketBooking = new TicketBooking();

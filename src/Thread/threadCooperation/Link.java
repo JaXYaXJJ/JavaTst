@@ -16,7 +16,9 @@ public class Link {
 
     //Volatile variable - shared variable
     //No race condition - only memory visibility is needed
-    private volatile String htmlPage;
+
+    //Wait() & Notify() Methods
+    private String htmlPage;
 
     //Setters + Getters
 

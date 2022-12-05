@@ -1,3 +1,5 @@
+package JavaTst.tst;
+
 import java.util.Scanner;
 
 public class choiceUDrink {

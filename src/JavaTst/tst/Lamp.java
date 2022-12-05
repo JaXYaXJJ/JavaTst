@@ -1,3 +1,5 @@
+package JavaTst.tst;
+
 public class Lamp {
 
         String color;
@@ -22,11 +24,11 @@ public class Lamp {
         }
 }
 
-//public class Main {
+//public class JavaTst.tst.Main {
 //    public static void main(String[] args) {
 //
-//        Lamp led = new Lamp();
-//        Lamp halogen = new Lamp();
+//        JavaTst.tst.Lamp led = new JavaTst.tst.Lamp();
+//        JavaTst.tst.Lamp halogen = new JavaTst.tst.Lamp();
 //
 //        led.color = "White";
 //        halogen.color = "Yellow";

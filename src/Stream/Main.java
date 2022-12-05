@@ -46,7 +46,7 @@ public class Main {
 
         filteredValues.forEach(System.out::println);
 
-        filteredValues.forEach(Main::changeSuffix);
+        filteredValues.forEach(JavaTst.tst.Main::changeSuffix);
 
          */
     }

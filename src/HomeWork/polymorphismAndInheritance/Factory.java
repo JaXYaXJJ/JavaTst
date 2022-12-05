@@ -7,7 +7,7 @@ public class Factory {
 
     Employee[] emps;
     int numOfEmps;
-    protected final static int MAX_EMPS = 100;
+    protected final static int MAX_EMPS = 5;
     private List<Employee> list;
 
     public Factory() {
@@ -18,20 +18,19 @@ public class Factory {
     }
 
     public boolean addEmployee(Employee e) {
+        
+        while (numOfEmps <= MAX_EMPS) {
 
-//        if (numOfEmps <= MAX_EMPS) {
-//            list.add(e);
-//            System.out.println(list);
-//            System.out.println(list.size());
-//            return true;
-//        } else {
-//            return false;
-//        }
-        while (numOfEmps < MAX_EMPS) {
             list.add(e);
-            System.out.println(list);
+            System.out.println("\n" + list);
+            emps = list.toArray(new Employee[MAX_EMPS]);
+
             numOfEmps++;
-            System.out.println("Current number of employees: " + numOfEmps);
+            System.out.println("Current number of employees: " + numOfEmps + "\n");
+
+            for (int i = 0; i < emps.length; i++) {
+                System.out.println(emps[i]);
+            }
             return true;
         }
         return false;

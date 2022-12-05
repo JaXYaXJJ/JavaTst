@@ -19,7 +19,6 @@ public class Downloader implements Runnable {
                 String htmlPage = HttpClass.downloadWebPage(weblink.getUrl());
                 //Updating shared volatile variable
                 weblink.setHtmlPage(htmlPage);
-
                 weblink.notify();
             }
 

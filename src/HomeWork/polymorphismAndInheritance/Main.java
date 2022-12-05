@@ -26,9 +26,14 @@ public class Main {
             }
         };
 
+        Employee employeeThree = new Employee("Iain") {
+            @Override
+            public double salary() { return 0; }
+        };
+
         Factory factory = new Factory();
         factory.addEmployee(employeeOne);
         factory.addEmployee(employeeTwo);
-
+        factory.addEmployee(employeeThree);
     }
 }

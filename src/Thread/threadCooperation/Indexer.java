@@ -3,7 +3,6 @@ package Thread.threadCooperation;
 public class Indexer implements Runnable {
 
     private Link weblink;
-
     public Indexer(Link weblink) {
         this.weblink = weblink;
     }
@@ -12,6 +11,7 @@ public class Indexer implements Runnable {
     public void run() {
 
         synchronized (weblink) {
+
             String htmlPage = weblink.getHtmlPage();
 
 //        while (true) {
@@ -28,9 +28,9 @@ public class Indexer implements Runnable {
             while (htmlPage == null) {
 
                 try {
-                    System.out.println(weblink.getId() + "Not yet downloaded...!");
+                    System.out.println(weblink.getId() + " not yet downloaded...!");
                     weblink.wait();
-                    System.out.println("Awakened...!!!");
+                    System.out.println(weblink.getId() + " awakened...!!!");
                     htmlPage = weblink.getHtmlPage();
 
                 } catch (InterruptedException e) {
