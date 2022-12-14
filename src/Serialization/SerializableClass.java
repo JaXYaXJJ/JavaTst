@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class SerializableClass implements Serializable {
 
     private String name;
-    private transient int id;
+    private transient int id; // non serializable
 
     public String getName() {
         return name;

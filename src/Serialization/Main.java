@@ -28,7 +28,6 @@ public class Main {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     public static void deSerializeObject() {
@@ -51,7 +50,6 @@ public class Main {
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     public static void main(String[] args) {
@@ -60,7 +58,4 @@ public class Main {
         deSerializeObject();
 
     }
-
-
 }
-

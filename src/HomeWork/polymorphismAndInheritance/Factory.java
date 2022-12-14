@@ -7,7 +7,7 @@ public class Factory {
 
     Employee[] emps;
     int numOfEmps;
-    protected final static int MAX_EMPS = 5;
+    protected final static int MAX_EMPS = 100;
     private List<Employee> list;
 
     public Factory() {
@@ -18,7 +18,7 @@ public class Factory {
     }
 
     public boolean addEmployee(Employee e) {
-        
+
         while (numOfEmps <= MAX_EMPS) {
 
             list.add(e);

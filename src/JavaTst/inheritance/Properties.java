@@ -7,7 +7,7 @@ public class Properties extends Geom {
     private int num = 10; //private
     protected int no = 20; //protected
 
-    Properties() {
+    public Properties() {
         super(1986);
     }
 
