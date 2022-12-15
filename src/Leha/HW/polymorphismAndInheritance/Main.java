@@ -17,47 +17,28 @@ public class Main {
         Worker w4 = new Worker("Koby", 36);
         w4.setHours(238);
 
-        Manager m1 = new Manager("Noah", 5000, 19);
+        Manager m1 = new Manager("Noah", 5000, 14);
         System.out.println(m1);
         System.out.println(m1.salary());
 
-        Manager m2 = new Manager("Cole", 5000, 14);
+        Manager m2 = new Manager("Cole", 5000, 19);
         System.out.println(m2);
         System.out.println(m2.salary());
 
         Manager m3 = new Manager("Dona", 5000, 12);
 
-        Employee e1 = new Employee("Alex") {
-            @Override
-            public double salary() {
-                return 0;
-            }
-        };
-
-        Employee e2 = new Employee("Lisa") {
-            @Override
-            public double salary() {
-                return 0;
-            }
-        };
-
         Factory f1 = new Factory();
-        f1.addEmployee(e1);
-        f1.addEmployee(e2);
+
+        f1.addEmployee(m1);
+        f1.addEmployee(m2);
+        f1.addEmployee(m3);
+        f1.addEmployee(w1);
+        f1.addEmployee(w2);
+        f1.addEmployee(w3);
+        f1.addEmployee(w4);
 
         f1.numOfWorkers();
 
-        f1.addToManagerList(m1);
-        f1.addToManagerList(m2);
-        f1.addToManagerList(m3);
-
         f1.mostManager();
-
-        f1.addToWorkerList(w1);
-        f1.addToWorkerList(w2);
-        f1.addToWorkerList(w3);
-        f1.addToWorkerList(w4);
-
-        f1.minHours();
     }
 }
