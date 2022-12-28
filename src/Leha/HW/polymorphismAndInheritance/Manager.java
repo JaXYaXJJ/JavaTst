@@ -34,13 +34,16 @@ public class Manager extends Employee {
         wage = 5000;
 
         if (numOfWorkers <= 10) {
-            System.out.println("Your wage: " + wage);
+//            System.out.println("Your wage: " + wage);
+            return wage;
         } else if (numOfWorkers > 10 && numOfWorkers <= 20) {
-            System.out.println("Your wage + bonus: " + (wage + numOfWorkers * 50.0));
+//            System.out.println("Your wage + bonus: " + (wage + numOfWorkers * 50.0));
+            return wage + numOfWorkers * 50.0;
         } else if (numOfWorkers > 20) {
-            System.out.println("Your wage + bonus: " + (wage + 10 * 50 + 500));
+//            System.out.println("Your wage + bonus: " + (wage + 10 * 50 + 500));
+            return wage + 10 * 50 + 500;
         }
-        System.out.println("\n" + name + ": your basic wage: ");
+//        System.out.println("\n" + name + ": your basic wage: ");
         return wage;
     }
 

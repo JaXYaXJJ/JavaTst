@@ -29,8 +29,8 @@ public class Worker extends Employee {
     @Override
     public String toString() {
 
-        return "\nEmployee's name: " + name
-                + "\nwage per hour = " + wagePerHour
-                + "\nhours = " + hours;
+        return "Worker's name: " + name
+                + " wage per hour = " + wagePerHour
+                + " hours = " + hours;
     }
 }

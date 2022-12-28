@@ -40,5 +40,13 @@ public class Main {
         f1.numOfWorkers();
 
         f1.mostManager();
+
+        f1.minHours();
+
+        f1.maxSalary();
+
+        f1.getByName("Koby");
+
+        f1.toString();
     }
 }
