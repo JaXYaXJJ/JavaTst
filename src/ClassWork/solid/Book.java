@@ -26,4 +26,10 @@ public class Book implements IProd {
 
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "{ " +
+                bookName + ", by " + author + " }";
+    }
 }

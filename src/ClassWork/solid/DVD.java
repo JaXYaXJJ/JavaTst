@@ -18,4 +18,10 @@ public class DVD implements IProd {
 
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "{ " +
+                dvdName + ", by " + director + " }";
+    }
 }
