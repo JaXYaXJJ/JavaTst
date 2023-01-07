@@ -25,5 +25,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="commons-text-1.10" level="project" />
+    <orderEntry type="library" name="mysql-connector" level="project" />
   </component>
 </module>
